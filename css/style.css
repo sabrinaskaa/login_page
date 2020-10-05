@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background:transparent;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links {
+    list-style: none;
+    margin-top: 16px;
+   
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #00a890;
+    text-decoration: none;
+}
+
+button {
+    margin-left: 20px;
+    padding: 5px 38px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #454544;
+}
+
+.body {
+    background: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 4%;
+    color: #ced4da;
+}
+
+.card{
+    border-radius: 0;
+    border: 0;
+}
+
+.img-fluid {
+    display: block;
+    margin-left: 50%;
+}
+
+.card-header {
+    background: transparent;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.icon-user {
+    display: inline-block;
+}
+
+form {
+    width: 543px;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mz-check {
+    cursor: pointer;
+    padding-left: 1.25rem;
+    margin: 0;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative; }
+.mz-check input {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+    margin-left: -1.25rem; }
+.mz-check input:checked + i:before {
+    border-width: 0;
+    background-color: inherit; }
+.mz-check input:checked + span .active {
+        display: inherit; }
+.mz-check input[type="radio"] + i, .mz-check input[type="radio"] + i:before {
+    border-radius: 50%; }
+.mz-check input[type="checkbox"]:checked + i:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    display: table;
+    width: 6px;
+    height: 12px;
+    border: 2px solid;
+    border-top: 0;
+    border-left: 0;
+    content: ' '; }
+.mz-check input[type="radio"]:checked + i:after {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    display: table;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    content: ' '; }
+.mz-check input[disabled] + i:before,
+      fieldset[disabled] .mz-check input + i:before {
+    opacity: 0.5; }
+.mz-check input[disabled]:checked + i:before {
+        opacity: 0.5; }.mz-check > i {
+    width: 0;
+    height: 18px;
+    line-height: 1;
+    margin-left: -20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 28px;
+    position: relative; }
+.mz-check > i:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 100%;
+    border: 2px solid #cecece;
+         }
+.mz-check > i.no-icon:after {
+    display: none !important; }
+  
+.mz-blue {
+    background-color: #1784c7;
+    color: #fff;
+      }
+
+.input-group-text {
+    background: transparent;
+    border-radius: 0;
+}
+
+.form-control {
+    border-left: 0;
+    padding-left: 0;
+}
+
+.form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 758px) {
+    .mt-12 {
+        margin-top: 0;
+    }
+}
